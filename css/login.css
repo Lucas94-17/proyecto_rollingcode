@@ -1,0 +1,256 @@
+html {
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 62.5%;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url(../img/codeflex.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+h2 {
+  font-size: 3rem;
+  margin: 1rem auto;
+  color: #ffffff;
+}
+header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+/*Footer ---------------------------------------------------------------*/
+footer{
+  position: fixed;
+  bottom: 0%;
+  font-size: 2rem;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.pages_container{
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15rem;
+}
+.pages:hover{
+  color: #8c8c8c;
+  cursor: pointer;
+  transition: .4s ease all;
+}
+.icons_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.icons_container ul {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+.icons_container li {
+color: #ffffff;
+}
+.icons_container li:hover{
+  cursor: pointer;
+  color: #e50914;
+  transition: .4s ease all;
+}
+a:hover {
+  color: #8c8c8c;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+/*------------------------------------------------------------------------------------------------------*/
+
+.container {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form_container {
+  background-color: #000000;
+  opacity: 0.8;
+  border: none;
+  text-align: center;
+  padding: 1rem;
+  width: 60rem;
+  height: 50rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3rem;
+  border-radius: 1rem;
+}
+.email_container,
+.password_container {
+  margin: 1rem 0;
+}
+.email_input,
+.password_input {
+  font-size: 1.5rem;
+  padding: 0 1rem;
+  width: 80%;
+  height: 5rem;
+  background-color: #b5aeae;
+  border-radius: 0.5rem;
+  border-style: none;
+}
+
+
+.email_input:hover {
+  background-color: #8c8c8c;
+  opacity: 0.7;
+}
+.password_input:hover {
+  background-color: #8c8c8c;
+  opacity: 0.7;
+}
+
+.checkbox_input {
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10rem;
+  color: #ffffff;
+}
+
+.checkbox_input a {
+  color: #ffffff;
+  text-decoration: none;
+}
+.checkbox_input a:hover {
+  color: #8c8c8c;
+}
+.checkbox {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.checkbox:hover {
+  color: #8c8c8c;
+  cursor: pointer;
+}
+
+.btn {
+  background-color: #e50815;
+  color: #ffffff;
+  width: 60%;
+  height: 4rem;
+  padding: 0.5rem;
+  font-size: 2rem;
+  margin: 1rem auto;
+  border-radius: .5rem;
+  border: none;
+  text-align: center;
+  font-weight: bold;
+}
+.btn:hover {
+  background-color: #b1060f;
+  cursor: pointer;
+}
+@media (max-width: 1023px) {
+  h2 {
+    font-size: 2rem;
+    margin: 1rem auto;
+    color: #ffffff;
+  }
+  .form_container {
+    transition: .4s ease all;
+    padding: 1rem;
+    width: 40rem;
+    height: 40rem;
+    gap: 2rem;
+  }
+  .checkbox_input {
+    font-size: 1.5rem;
+    gap: 1rem;
+  }
+  .container {
+    margin-top: 4rem;
+  }
+  header {
+    justify-content: center;
+  }
+}
+@media (max-width: 767px){
+  .form_container {
+    transition: .4s ease all;
+    padding: 1rem;
+    width: 30rem;
+    height: 40rem;
+    gap: 1.5rem;
+  }
+  .email_input,
+  .password_input {
+    height: 3rem;
+    width: 60%;
+  }
+  .btn {
+    background-color: #e50815;
+    color: #ffffff;
+    width: 50%;
+    height: 3rem;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+  }
+  .btn:hover {
+    background-color: #b1060f;
+    cursor: pointer;
+  }
+  footer {
+    width: 100%;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .container-fluid_footer{
+    display: none;
+  }
+  .pages_container{
+    width: 100%;
+    height: 4rem;
+    background-color: #e50914;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+  }
+  .pages_container:hover{
+    background-color: #b1060f;
+  }
+  .icons_container {
+    background-color: #e50914;
+    width: 100%;
+  }
+  .icons_container:hover{
+    background-color: #b1060f;
+  }
+ .icons_container li:hover{
+    color: #ffffff;
+ }
+}

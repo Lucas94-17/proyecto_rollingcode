@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Suscripcion</title>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="container-fluid">
+        <br />
+
+        <a href="/index.html"
+          ><img
+            src="https://fontmeme.com/permalink/221212/befc259218a168c375ede601ea0a65e0.png"
+            alt="fuente-de-netflix"
+        /></a>
+      </div>
+      <div class="search_container">
+        <input
+          class="d-block"
+          role="search"
+          type="search"
+          size="30"
+          placeholder="Títulos, personas, géneros"
+        />
+        <button class="btn btn-outline-success" type="submit">Buscar</button>
+      </div>
+
+      <nav class="navbar">
+        <div class="navbar_cont">
+          <a href="../pages/suscripcion.html">Suscripción</a>
+        </div>
+        <div class="navbar_cont">
+          <a href="../pages/login.html">Iniciar Sesión</a>
+        </div>
+      </nav>
+    </header>
+    <h1 class="letter">Nuestros planes para vos</h1>
+    <div class="container">
+      <div class="caja1">
+        <p class="center">Básico</p>
+        <ul class="list">
+          <li>Precio al mes (antes de impuestos): ARS699</li>
+          <li>Calidad de vídeo Buena</li>
+          <li>Resolución 720p</li>
+          <li>Codeflex en tu: TV, ordenador, teléfono móvil y tableta</li>
+        </ul>
+      </div>
+      <div class="caja2">
+        <p class="center">Estándar</p>
+        <ul class="list">
+          <li>Precio al mes (antes de impuestos): ARS1299</li>
+          <li>Calidad de vídeo Muy Buena</li>
+          <li>Resolución 1080p</li>
+          <li>Codeflex en tu: TV, ordenador, teléfono móvil y tableta</li>
+        </ul>
+      </div>
+      <div class="caja3">
+        <p class="center">Premium</p>
+        <ul class="list">
+          <li>Precio al mes (antes de impuestos): ARS1899</li>
+          <li>Calidad de vídeo exepcional</li>
+          <li>Resolución 4K+HDR</li>
+          <li>Codeflex en tu: TV, ordenador, teléfono móvil y tableta</li>
+        </ul>
+      </div>
+    </div>
+    <div class="fondo">
+      <h2 class="titleh2">
+        Para finalizar su suscripcion complete el siguiente formulario
+      </h2>
+      <div>
+        <form action="../pages/login.html">
+          <label for="nombre" class="form_label">Nombre</label>
+          <input
+            type="text"
+            id="nombre"
+            class="form_input"
+            required
+            minlength="3"
+            maxlength="24"
+          />
+
+          <label for="apellido" class="form_label">Apellido</label>
+          <input
+            type="text"
+            id="apellido"
+            class="form_input"
+            required
+            minlength="3"
+            maxlength="24"
+          />
+
+          <label for="direccion" class="form_label">Email</label>
+          <input
+            type="email"
+            id="direccion"
+            class="form_input"
+            required
+            minlength="8"
+            maxlength="24"
+          />
+
+          <label for="contraseña" class="form_label">Contraseña</label>
+          <input
+            type="password"
+            id="contraseña"
+            class="form_input"
+            required
+            minlength="8"
+            maxlength="24"
+          />
+          <input
+            type="submit"
+            class="btn-submit"
+            value="SUSCRIBIRSE"
+            required
+          />
+        </form>
+      </div>
+    </div>
+    <footer class="text-white">
+      <a class="container-fluid_footer" href="/index.html"
+        ><img
+          src="https://fontmeme.com/permalink/221213/27edd91674f0493deb065d7148c56e04.png"
+          alt="fuente-de-netflix"
+      /></a>
+      <div class="pages_container">
+        <div class="pages">
+          <a href="../pages/contacto.html">Contactanos</a>
+        </div>
+        <div class="pages">
+          <a href="../pages/aboutus.html">Sobre nosotros</a>
+        </div>
+      </div>
+      <div class="icons_container">
+        <ul>
+          <li><ion-icon name="logo-facebook"></ion-icon></li>
+          <li><ion-icon name="logo-twitter"></ion-icon></li>
+          <li><ion-icon name="logo-instagram"></ion-icon></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
